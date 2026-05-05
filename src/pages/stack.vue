@@ -8,7 +8,7 @@ const demoBoxClass =
 </script>
 
 <template>
-    <SerenePage title="Stack" description="要素を垂直方向に積み上げます。デザインシステムに基づいた定義済みの余白（Gap）を使用することで、アプリケーション全体で一貫した空気感を保つことができます。">
+    <SerenePage title="Stack">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
             <section>
                 <h2

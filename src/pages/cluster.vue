@@ -4,7 +4,7 @@ import Stack from "../components/atom/Stack.vue";
 import Cluster from "../components/atom/Cluster.vue";
 import Card from "../components/Card.vue";
 import SerenePage from "../components/base/Page.vue";
-import SereneSection from "../components/base/Page.vue";
+import SereneSection from "../components/base/Section.vue";
 
 const tags = ['Design', 'Development', 'Vue.js', 'TailwindCSS', 'Minimalism', 'UI/UX']
 </script>

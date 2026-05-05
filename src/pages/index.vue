@@ -10,8 +10,8 @@ import SereneSection from "../components/base/Section.vue";
     <SerenePage title="Welcome to SereneUI" description="SereneUI is component library designed for calm websites.">
         <SereneSection title="Button">
             <Stack gap="sm" align="start">
-              <Button variant="solid">主要なアクション</Button>
-              <Button variant="glass" size="sm">サブアクション</Button>
+              <Button variant="solid">Main Action</Button>
+              <Button variant="glass" size="sm">Sub Action</Button>
             </Stack>
         </SereneSection>
     </SerenePage>
