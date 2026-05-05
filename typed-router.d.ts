@@ -37,6 +37,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/basic': RouteRecordInfo<
+      '/basic',
+      '/basic',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/card': RouteRecordInfo<
       '/card',
       '/card',
@@ -44,16 +51,9 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/cluster': RouteRecordInfo<
-      '/cluster',
-      '/cluster',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/stack': RouteRecordInfo<
-      '/stack',
-      '/stack',
+    '/examples': RouteRecordInfo<
+      '/examples',
+      '/examples',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -77,21 +77,21 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'src/pages/basic.vue': {
+      routes:
+        | '/basic'
+      views:
+        | never
+    }
     'src/pages/card.vue': {
       routes:
         | '/card'
       views:
         | never
     }
-    'src/pages/cluster.vue': {
+    'src/pages/examples.vue': {
       routes:
-        | '/cluster'
-      views:
-        | never
-    }
-    'src/pages/stack.vue': {
-      routes:
-        | '/stack'
+        | '/examples'
       views:
         | never
     }

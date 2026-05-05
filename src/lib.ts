@@ -13,10 +13,11 @@ import Progress from './components/Progress.vue';
 import Sidebar from './components/sidebar/Sidebar.vue';
 import SidebarItem from './components/sidebar/SidebarItem.vue';
 import SidebarContent from './components/sidebar/SidebarContent.vue';
+import SidebarSection from './components/sidebar/SidebarSection.vue';
 
 export * from './composables/useRoutingProgress';
 
-export { Button, Cluster, Stack, SereneRouterView, SereneApp, SereneSection, SerenePage, SereneMain, Card, Progress, Sidebar, SidebarItem, SidebarContent };
+export { Button, Cluster, Stack, SereneRouterView, SereneApp, SereneSection, SerenePage, SereneMain, Card, Progress, Sidebar, SidebarItem, SidebarContent, SidebarSection };
 
 export default {
   install(app: App) {
@@ -39,5 +40,6 @@ export default {
     app.component('SereneSidebar', Sidebar);
     app.component('SereneSidebarContent', SidebarContent);
     app.component('SereneSidebarItem', SidebarItem);
+    app.component('SereneSidebarSection', SidebarSection);
   }
 };
