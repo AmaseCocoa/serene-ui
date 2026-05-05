@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-serene-bg: #f8f9fa;
+  --color-serene-text: #2d3436;
+  --color-serene-primary: oklch(0.65 0.12 250); 
+  
+  --spacing-serene: 1.25rem;
+  
+  --animate-subtle-fade: subtle-fade 0.4s ease-out;
+}
+
+@keyframes subtle-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
