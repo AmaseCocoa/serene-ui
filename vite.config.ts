@@ -6,6 +6,7 @@ import path from 'path'
 import VueRouter from 'vue-router/vite'
 
 export default defineConfig({
+  base: "/serene-ui/",
   plugins: [VueRouter(), vue(), tailwindcss(), dts({ insertTypesEntry: true })],
   build: {
     lib: {
