@@ -26,7 +26,7 @@ import SereneRouterView from "./components/base/RouterView.vue";
         
             <template #footer>
               <SidebarSection>
-                <SidebarItem href="https://github.com/..." label="GitHub" />
+                <SidebarItem href="https://github.com/AmaseCocoa/serene-ui" label="GitHub" />
               </SidebarSection>
             </template>
           </Sidebar>
