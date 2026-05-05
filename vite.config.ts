@@ -5,20 +5,31 @@ import dts from 'vite-plugin-dts'
 import path from 'path'
 import VueRouter from 'vue-router/vite'
 
-export default defineConfig({
-  base: "/serene-ui/",
-  plugins: [VueRouter(), vue(), tailwindcss(), dts({ insertTypesEntry: true })],
-  build: {
-    lib: {
-      entry: path.resolve(__dirname, 'src/lib.ts'),
-      name: 'SereneUI',
-      fileName: (format) => `serene-ui.${format}.js`
-    },
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: { vue: 'Vue' }
-      }
-    }
+export default defineConfig(({ mode }) => {
+  const isLib = mode === 'lib'
+
+  return {
+    base: "/serene-ui/",
+    plugins: [
+      VueRouter(), 
+      vue(), 
+      tailwindcss(),
+      isLib && dts({ insertTypesEntry: true })
+    ],
+    build: isLib 
+      ? {
+          lib: {
+            entry: path.resolve(__dirname, 'src/lib.ts'),
+            name: 'SereneUI',
+            fileName: (format) => `serene-ui.${format}.js`
+          },
+          rollupOptions: {
+            external: ['vue'],
+            output: { globals: { vue: 'Vue' } }
+          }
+        }
+      : {
+          outDir: 'dist-docs',
+        }
   }
 })

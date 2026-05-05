@@ -30,12 +30,12 @@ jobs:
       - name: Install and Build
         run: |
           pnpm install --frozen-lockfile
-          pnpm run build
+          pnpm run build:docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: './dist'
+          path: './dist-docs'
 
       - name: Deploy to GitHub Pages
         id: deployment
