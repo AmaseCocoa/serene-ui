@@ -26,5 +26,11 @@
     "vite": "^8.0.10",
     "vite-plugin-dts": "^5.0.0",
     "vue-tsc": "^3.2.7"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/serene-ui.es.js",
+      "require": "./dist/serene-ui.umd.js"
+    }
   }
 }
